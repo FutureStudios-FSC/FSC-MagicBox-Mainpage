@@ -1,0 +1,310 @@
+<!-- 这是 PCL 的主页自定义文件。你可以通过修改这个文件来自定义 PCL 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL 玩炸了，把这个文件直接删除就行了。
+     下列内容均基于 WPF 框架。你可以在继续之前先尝试自学 XAML 与 WPF 的基础，这能让你更轻松地理解下列内容。
+     你也可以使用 Ctrl + F 快速查找。例如，若需要改变文本颜色，则搜索 “颜色” 即可。 -->
+
+<local:MyHint IsWarn="False" Text="由FSC Team制作和维护。" EventType="弹出窗口" EventData="关于|该功能基于PCL II的‘读取本地文件’自定义主页功能。\n你也可以学习制作Custom.xaml！\nPCL II中，打开设置-个性化，找到‘主页’，选择‘读取本地文件’\n来生成教学文件到PCL文件夹。" Margin="0,0,0,10" />
+
+<local:MyHint IsWarn="True" Text="该主页存储在http://xxag.top，该网站还包含了部分网页的CSS、JS以及大量重要文件。请不要攻击或进行压力测试，也不要试图把服务器挤爆！" Margin="0,0,0,10" />
+
+<local:MyCard Title="Minecraft 小助手" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Fabric.png"
+            Title="官方游戏新闻" Info="查看Mojang官方的游戏新闻！" EventType="打开网页" EventData="https://www.minecraft.net/zh-hans/articles" Type="Clickable" />
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Fabric.png"
+            Title="PCL游戏新闻" Info="由LightBeacon维护的新闻主页。" EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
+        
+        
+        <TextBlock Text="Minecraft核心小助手" FontWeight="Bold" Foreground="{DynamicResource ColorBrush3}" Margin="0,10,0,10"/>
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/RedStoneLampOn.png"
+            Title="快速安装Minecraft游戏核心" Info="利用PCL快速安装Minecraft" EventType="切换页面" EventData="1|1" Type="Clickable" />
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/RedStoneLampOff.png"
+            Title="安装整合包" Info="从.zip或其他整合包文件安装Minecraft" EventType="安装整合包" Type="Clickable" />
+            
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Minecraft 小知识" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="小知识征集令！" Info="作者：FSC 2024/6/16" EventType="弹出窗口" EventData="【MagicBox PCL主页官方】小知识征集令！|现在作者没有什么想法，所以急需一点点灵感！\n可以投稿你的文章，发到我的电邮（dhjhsio@outlook.com），\n然后等我什么时候忘了密码..." Type="Clickable" />
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/RedStoneBlock.png"
+            Title="小知识投稿须知" Info="作者：FSC 2024/6/19" EventType="弹出窗口" EventData="【MagicBox PCL主页官方】小知识投稿须知|为了筛选优秀的小知识，限制投稿：\n内容必须准确，可以从可靠资源摘抄\n必须有标题：就像其他的小知识一样，方便查看\n提供作者：请在信中写上自己的昵称，将会标在作者处\n如果有不满足要求的投稿，我们可能不会采纳，\n敬请谅解。感谢您对MagicBox的支持！" Type="Clickable" />
+            
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/CobbleStone.png"
+            Title="无论何时都存在的保存功能" Info="作者：FSC 2024/6/16" EventType="弹出窗口" EventData="【游戏】无论何时都存在的保存功能|Minecraft在崩溃的时候，不用担心存档丢失！\n在退出前，Minecraft都会尝试保存。\n（你要说是自己用任务管理器把MC干掉了呢...）" Type="Clickable" />
+            
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/CobbleStone.png"
+            Title="都2024年了，不会还有人不知道忘了开启作弊怎么办吧？" Info="作者：FSC 2024/6/16" EventType="弹出窗口" EventData="【游戏】都2024年了，不会还有人不知道忘了开启作弊怎么办吧？|相信各位MC玩家都有忘了开作弊的时候，\n然后想找创哥借东西——没权限！\n这个时候，其实只需要打开菜单，对局域网开放，\n设置允许作弊，自己就也可以作弊了！" Type="Clickable" />
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/CobbleStone.png"
+            Title="Minecraft很久之前就有了2.0？" Info="作者：FSC 2024/6/16" EventType="弹出窗口" EventData="【游戏】Minecraft很久之前就有了2.0？|Mojang其实很勤奋，他们总是会创建新的元素，尊重玩家的想法。\n比如，为了适合全年龄游玩，他们特地开发了15w14a，\n他们尊重玩家的选择，更新了23w13a_or_b，\n还在24w14potato增强了毒马铃薯！\n虽然以上都是愚人节版本，但2.0确实创造出了‘有色玻璃’这种新元素！" Type="Clickable" />
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/CobbleStone.png"
+            Title="Bugjump研发出了可以挤奶的鱿鱼..." Info="作者：FSC 2024/6/16" EventType="弹出窗口" EventData="【游戏】Bugjump研发出了可以挤奶的鱿鱼...|在Minecraft更新了‘鱿鱼’的不久，\n一位玩家无意间拿桶点了一下鱿鱼，结果...\n桶变成了奶桶，形成了‘鱿鱼奶’这个梗。\n传闻该问题是因为一位员工不知道该如何编写鱿鱼，\n于是就把牛的代码拿来修改了下，\n但是没有删除挤奶的功能。\nMojang不久就把问题修复了。" Type="Clickable" />
+        
+        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Minecraft 服务器指南" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+            
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Fabric.png"
+            Title="加入服务器的办法和解决方案" Info="显示如何加入Minecraft服务器。" EventType="弹出窗口" EventData="加入服务器的办法和解决方案|进入Minecraft，点击‘多人游戏’，\n选择‘直接连接’或‘添加服务器’，输入服务器地址\n比如：mc.hypixel.net或192.168.31.191\n可能会遇到一些问题，比如InvalidSession\n是您尝试离线加入正版服务器，也可以在帮助或相关网站查找。" Type="Clickable" />
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Fabric.png"
+            Title="无法加入服务器的解决方案" Info="如果在加入服务器时遇到问题，请查看" EventType="弹出窗口" EventData="无法加入服务器的解决方案|Server Closed：服务器已关闭，找腐竹开启\nServer is full：服务器满员，但是我们可能不会及时发现\nInvalid Session：无效会话，因为在以离线或第三方进行游戏。（仅限正版验证服务器）\n如果是其他奇奇怪怪的小问题，可以自己查查，\n可能是用户的问题，也可能是服务器状态不佳或没有完全启动。" Type="Clickable" />
+        
+        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="友情链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="Minecraft 官方网站" Info="查收最新的Minecraft官方新闻，查看游戏！" EventType="打开网页" EventData="https://www.minecraft.net" Type="Clickable" />
+            
+        <local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/GrassPath.png"
+            Title="Microsoft Xbox 购买 Minecraft" Info="购买国际版Minecraft" EventType="打开网页" EventData="https://www.xbox.com/zh-CN/games/store/minecraft-java-bedrock-edition-for-pc/9nxp44l49shj" Type="Clickable" />
+        
+        <local:MyListItem
+            Margin="0,20,0,0"
+            Title="Minecraft Wiki" Info="在Wiki中搜索Minecraft的相关内容。" EventType="打开网页" EventData="https://zh.minecraft.wiki" Type="Clickable" />
+        
+        <local:MyListItem
+            Title="MineBBS" Info="在论坛中讨论Minecraft的相关内容" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable"/>
+            
+        <local:MyListItem
+            Title="MCNav" Info="在网站中查找Minecraft的大部分相关页面！" EventType="打开网页" EventData="https://www.mcnav.net/" Type="Clickable"/>
+            
+        <local:MyListItem
+            Title="MC百科" Info="搜索Minecraft热门模组，查看信息。" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+        
+        <local:MyListItem
+            Title="CurseForge" Info="探索和安装Forge游戏模组，不止Minecraft！" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
+        
+        <local:MyListItem
+            Title="Modrinth" Info="探索丰富的Minecraft模组" EventType="打开网页" EventData="https://modrinth.com/mods" Type="Clickable" />
+        
+        <local:MyListItem
+            Title="LittleSkin" Info="快速、可靠的Minecraft皮肤站（龙猫：禁止随地打广告！）" EventType="打开网页" EventData="https://littleskin.cn/" Type="Clickable"/>
+            
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="百宝箱" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    
+	<StackPanel Margin="25,40,23,15">
+		
+		<Grid>
+        	<Grid.ColumnDefinitions>
+        		<ColumnDefinition Width="1*" />
+        		<ColumnDefinition Width="1.6*" MinWidth="200" />
+        		<!-- 第二个按钮的宽度是第一个按钮的 1.6 倍，且至少为 200 -->
+        		<ColumnDefinition Width="150" />
+        		<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+        	</Grid.ColumnDefinitions>
+        	
+        	<!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
+        	<local:MyButton Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Height="35" ColorType="Highlight"
+            Text="今日人品" EventType="今日人品"/>
+		
+            <local:MyButton Grid.Row="0" Grid.Column="1" Margin="0,0,10,0" Height="35" ColorType="Highlight"
+                Text="内存优化" EventType="内存优化" />
+            
+            <local:MyButton Grid.Row="0" Grid.Column="2" Margin="0,0,0,0" Height="35" ColorType="Highlight"
+                Text="清理游戏垃圾" EventType="清理垃圾" />
+            
+        </Grid>
+	</StackPanel>
+	
+	<StackPanel Margin="25,40,23,15">
+		
+		<Grid>
+        	<Grid.ColumnDefinitions>
+        		<ColumnDefinition Width="1*" />
+        		<ColumnDefinition Width="1.6*" MinWidth="200" />
+        		<!-- 第二个按钮的宽度是第一个按钮的 1.6 倍，且至少为 200 -->
+        		<ColumnDefinition Width="150" />
+        		<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+        	</Grid.ColumnDefinitions>
+        	
+        	<local:MyButton Grid.Row="1" Grid.Column="0" Margin="0,50,0,0" Height="35"
+                Text="回声洞" EventType="弹出窗口" EventData="回声洞|{cave}" />
+                
+            <local:MyButton Grid.Row="1" Grid.Column="1" Margin="10,50,0,0" Height="35"
+                Text="你知道吗" EventType="弹出窗口" EventData="你知道吗？|{hint}" />
+            
+        </Grid>
+        
+        <local:MyHint Text="出于PCL的特性和本人没有什么经验（指编写PCL主页），回声洞和你知道吗只会在主页刷新时变化！" Margin="0,10,0,10" />
+        
+        
+         
+        <local:MyCard Title="PCL高速下载器" Margin="0,20,0,15" CanSwap="True" IsSwaped="False">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyHint Margin="0,0,0,10" IsWarn="False" Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站（例如百度网盘）可能会报错(403)已禁止，无法正常下载。"/>
+                <Grid>
+                       <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                       </Grid.ColumnDefinitions>
+                       <local:MyTextBox HintText="下载文件链接" Margin="0,0,0,0" Name="web" Height="30" Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
+                       <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+                </Grid>
+            </StackPanel>
+        </local:MyCard>
+        
+        
+	</StackPanel>
+	
+</local:MyCard>
+
+<local:MyCard Title="自定义主页帮助" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+		
+		<TextBlock Text="要自定义主页，可以先进入设置-个性化："/>
+		<local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+            Title="个性化设置" Info="进入后找到主页，然后选择‘读取本地文件’，就可以生成教学文件跟着走！" EventType="切换页面" EventData="3|1" Type="Clickable" Margin="0,10,0,10"/>
+        
+        <TextBlock Text="如果你有了Custom.xaml，可以直接进入编辑，或者先查看帮助（更多/帮助/个性化）"/>
+		<local:MyListItem
+            Logo="pack://application:,,,/images/Blocks/Anvil.png"
+            Title="自定义主页" Info="跟着龙猫的提示制作，然后在启动器个性化主页里点击‘刷新主页’测试吧！" EventType="打开文件" EventData="{path}/PCL/Custom.xaml" Type="Clickable" Margin="0,10,0,10"/>
+            
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="更多" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+		
+		<Grid>
+        	<Grid.ColumnDefinitions>
+        		<ColumnDefinition Width="1*" />
+        		<ColumnDefinition Width="1.6*" MinWidth="200" />
+        		<!-- 第二个按钮的宽度是第一个按钮的 1.6 倍，且至少为 200 -->
+        		<ColumnDefinition Width="150" />
+        		<!-- 如果不打 *，则会占用固定的宽度，也可以写 Auto 来自适应 -->
+        	</Grid.ColumnDefinitions>
+        	
+        	<!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
+        	<local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" ColorType="Highlight"
+            Text="获取FSC魔法主页" ToolTip="直接获取官方魔法主页！" EventType="打开网页" EventData="http://xxag.top/FSC%20Statics/Misc/MagicBox.xaml"/>
+		
+            <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" ColorType="Highlight"
+                Text="刷新主页" EventType="刷新主页" />
+            
+            <local:MyButton Grid.Column="2" Margin="10,0,0,0" Height="35"
+                Text="反馈" ToolTip="复制作者的QQ号到剪贴板（2149493744）" EventType="复制文本" EventData="2149493744"/>
+                
+                
+        </Grid>
+        
+	</StackPanel>
+	
+	<StackPanel Margin="25,40,23,15">
+		
+		<Grid>
+        	<Grid.ColumnDefinitions>
+        		<ColumnDefinition Width="1*" />
+        		<ColumnDefinition Width="1.6*" MinWidth="200" />
+        		<ColumnDefinition Width="150" />
+        	</Grid.ColumnDefinitions>
+        	
+        	<local:MyButton Grid.Column="0" Margin="0,50,10,0" Height="35"
+            Text="帮助" EventType="打开帮助" EventData="http://xxag.top/FSC Statics/Misc/MBHelp.json"/>
+            
+            <local:MyButton Grid.Column="1" Margin="0,50,10,0" Height="35" ColorType="Red"
+            Text="特别感谢" EventType="弹出窗口" EventData="特别感谢|除龙猫和PCL以外，提供额外支持的也有：\nMFn233：提供下载器的帮助和主页市场！"/>
+                
+        </Grid>
+            
+        <TextBlock FontSize="12" Foreground="{DynamicResource ColorBrush3}" Margin="0,20,0,0" Text="© Copyright 2024 FSC Team. All rights reserved.（不是那个负责任林业）"/>
+        
+	</StackPanel>
+</local:MyCard>
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置横向对齐方式，居左：Left、居中：Center、居右：Right、拉伸（默认）：Stretch
+ - VerticalAlignment：设置纵向对齐方式，居上：Top、居中：Center、居下：Bottom、拉伸（默认）：Stretch
+ - IsHitTestVisible：该控件是否响应交互（点击、指向动画等），True 为是（默认），False 为否
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ - FontWeight：设置为 Bold 时，文字加粗
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+
+Image（图片）：
+ - Source：要显示的图片的网址，或 PCL 内置图片位置
+
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：卡片是否默认折叠，要求 CanSwap 必须为 True
+ - HorizontalAlignment：若使用，要求 CanSwap 必须为 False
+ - UseAnimation：是否在展开等高度改变时触发动画，True 为是（默认），False 为否
+ - SwapLogoRight：卡片折叠时的箭头是朝下还是朝右，True 为朝右，False 为朝下（默认）
+ - HasMouseAnimation：是否在鼠标指向时改变卡片颜色，True 为是（默认），False 为否
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+
+local:MyListItem（列表项）：
+ - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
+ - Title：列表项的大标题
+ - Info：列表项的详细信息，它将会以灰色显示在大标题下方
+ - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
+
+local:MyIconTextButton（带图标的按钮）：
+ - Text：设置显示的文本
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyIconButton（图标按钮）：
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - Theme：设置颜色主题，Color（默认）为当前启动器的主题颜色，也可设置为 White、Black、Red
+ - EventType、EventData：触发特定事件
+
+-->
