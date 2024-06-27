@@ -1,17 +1,13 @@
-# PCL-Mainpage
+# PCL-Mainpage-MagicBox
 
 An useful mainpage based on pcl2 by 龙腾猫跃
 
-欢迎Fork此项目，制作你自己的主页文件！
+该存储库保存的是MagicBox主页的内容，
 
-[点我打开文件Custom.xaml](./Custom.xaml)
+首先版本更新可能滞后，
 
-## 贡献者
-
-![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
-
-~Bus factor : 3~
+其次，这里不是简单主页的仓库！！！
 
 ## 讨论
 
-[点击加入KOOK频道](https://kook.top/uu1fvv)
+[【小知识征集令】投稿处](https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/discussions)
