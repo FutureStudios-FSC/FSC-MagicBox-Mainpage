@@ -216,7 +216,7 @@
                 Text="刷新主页" EventType="刷新主页" />
             
             <local:MyButton Grid.Column="2" Margin="10,0,0,0" Height="35"
-                Text="反馈" ToolTip="复制作者的QQ号到剪贴板（2149493744）" EventType="复制文本" EventData="2149493744"/>
+                Text="反馈" ToolTip="现在可以去GitHub上交Issue啦！" EventType="打开网页" EventData="https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/issues"/>
                 
                 
         </Grid>
