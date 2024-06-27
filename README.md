@@ -2,7 +2,7 @@
 
 An useful mainpage based on pcl2 by 龙腾猫跃
 
-该存储库保存的是MagicBox主页的内容，
+该存储库保存的是MagicBox2.1主页的内容，
 
 首先版本更新可能滞后，
 
@@ -10,4 +10,4 @@ An useful mainpage based on pcl2 by 龙腾猫跃
 
 ## 讨论
 
-[【小知识征集令】投稿处](https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/discussions)
+[【小知识征集令】投稿处](https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/discussions/1)
