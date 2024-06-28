@@ -1,5 +1,7 @@
 # PCL-Mainpage-MagicBox
 
+[*If you are English users, click here*](https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/README_en.md)
+
 该存储库保存的是MagicBox2.1主页的内容，
 
 首先版本更新可能滞后，
