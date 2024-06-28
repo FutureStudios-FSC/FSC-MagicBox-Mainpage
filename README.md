@@ -1,7 +1,5 @@
 # PCL-Mainpage-MagicBox
 
-An useful mainpage based on pcl2 by 龙腾猫跃
-
 该存储库保存的是MagicBox2.1主页的内容，
 
 首先版本更新可能滞后，
