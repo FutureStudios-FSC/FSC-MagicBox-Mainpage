@@ -8,7 +8,7 @@
 
 其次，这里不是简单主页的仓库！！！
 
-![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
+![Contributors](https://contrib.rocks/image?repo=FutureStudios-FSC/PCL-Mainpage-MagicBox)
 
 ## 讨论
 
