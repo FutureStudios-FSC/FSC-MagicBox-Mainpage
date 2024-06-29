@@ -8,6 +8,8 @@
 
 其次，这里不是简单主页的仓库！！！
 
+![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
+
 ## 讨论
 
 [【小知识征集令】投稿处](https://github.com/FutureStudios-FSC/PCL-Mainpage-MagicBox/discussions/1)
